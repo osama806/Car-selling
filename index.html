@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon4.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car selling website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="section pt-0 pb-0">
+      <div class="container">
+        <nav class="navbar is-transparent my-0 mx-auto">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.cars.com/">
+              <img
+                src="images/logo_cars-46214ae902ff93ba8fa2e40fb73dfa02.png"
+                alt="Cars.com"
+                width="75"
+              />
+            </a>
+            <div
+              class="navbar-burger"
+              data-target="navbarExampleTransparentExample"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="#"> Cars for Sales </a>
+              <a class="navbar-item" href="#"> Research & Reviews </a>
+              <a class="navbar-item" href="#"> News & Videos </a>
+              <a class="navbar-item" href="#"> Sell Your Car </a>
+              <a class="navbar-item" href="#"> Service & Repair </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link" href="#"> Menu </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="#"
+                      ><i class="fa-regular fa-heart mr-2"></i>Saved Cars</a
+                    >
+                    <a class="navbar-item" href="#"
+                      ><i class="fa-solid fa-magnifying-glass mr-2"></i>Saved
+                      Searches</a
+                    >
+                    <a class="navbar-item" href="#"
+                      ><svg
+                        class="mr-2"
+                        viewBox="0 0 33 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M30.734 19.334 20.572 29.496a4.251 4.251 0 0 1-6.014.001L2.386 17.34a1.417 1.417 0 0 1-.416-1.003V2.167c0-.783.634-1.417 1.417-1.417h14.17c.376 0 .736.15 1.002.415L30.734 13.34a4.251 4.251 0 0 1 0 5.994Zm-2.007-3.993L16.97 3.584H4.804v12.165L16.56 27.493a1.417 1.417 0 0 0 2.006 0l10.158-10.159a1.416 1.416 0 0 0 .002-1.993Zm-16.839-2.547a2.126 2.126 0 1 0 0-4.25 2.126 2.126 0 0 0 0 4.25Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      Your Garage</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <hr class="break my-0" />
+    <!-- Image, tabs and table -->
+    <section class="section pt-0 pb-0">
+      <div class="container introduction is-relative">
+        <img src="images/honda crv.webp" alt="Honda" class="mt-1" />
+        <div class="circle is-absolute">
+          <i class="fa-solid fa-play player is-size-1"></i>
+        </div>
+        <div class="is-flex">
+          <div class="tabs-table pl-5">
+            <div class="tabs">
+              <ul>
+                <li><a>Make</a></li>
+                <li><a>Body style</a></li>
+                <li><a>Electric</a></li>
+              </ul>
+              <a href="#" class="Advanced-search">Advanced search</a>
+            </div>
+            <table>
+              <tr>
+                <td>
+                  <div class="select is-relative">
+                    <select aria-label="New/used">
+                      <option>New & Used</option>
+                      <option>New & Certified</option>
+                      <option>New</option>
+                      <option>Used</option>
+                      <option selected>Certified</option>
+                    </select>
+                    <label>New / used</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="select is-relative">
+                    <select aria-label="Make">
+                      <option value="">All makes</option>
+                      <optgroup label="Popular makes">
+                        <option value="acura">Acura</option>
+                        <option value="bmw">BMW</option>
+                        <option value="buick">Buick</option>
+                        <option value="cadillac">Cadillac</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="dodge">Dodge</option>
+                        <option value="ford">Ford</option>
+                        <option value="gmc">GMC</option>
+                        <option value="honda" selected>Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="infiniti">INFINITI</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="kia">Kia</option>
+                        <option value="lincoln">Lincoln</option>
+                        <option value="mercedes_benz">Mercedes-Benz</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="ram">RAM</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                      </optgroup>
+                      <optgroup label="All makes">
+                        <option value="acura">Acura</option>
+                        <option value="alfa_romeo">Alfa Romeo</option>
+                        <option value="am_general">Am General</option>
+                        <option value="aston_martin">Aston Martin</option>
+                        <option value="bentley">Bentley</option>
+                        <option value="bmw">BMW</option>
+                        <option value="buick">Buick</option>
+                        <option value="cadillac">Cadillac</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="dodge">Dodge</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="fiat">FIAT</option>
+                        <option value="ford">Ford</option>
+                        <option value="gmc">GMC</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="infiniti">INFINITI</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="kia">Kia</option>
+                        <option value="lincoln">Lincoln</option>
+                        <option value="maserati">Maserati</option>
+                        <option value="mercedes_benz">Mercedes-Benz</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="polestar">Polestar</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="ram">RAM</option>
+                        <option value="rolls_royce">Rolls-Royce</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                      </optgroup>
+                    </select>
+                    <label>Make</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="select is-relative">
+                    <select aria-label="Model">
+                      <option value="">All models</option>
+                      <option value="honda-accord">Accord</option>
+                      <option value="honda-accord_hybrid">Accord Hybrid</option>
+                      <option value="honda-cr_v" selected>CR-V</option>
+                      <option value="honda-cr_v_hybrid">CR-V Hybrid</option>
+                      <option value="honda-civic">Civic</option>
+                      <option value="honda-civic_si">Civic Si</option>
+                      <option value="honda-civic_type_r">Civic Type R</option>
+                      <option value="honda-clarity_plug_in_hybrid">
+                        Clarity Plug-In Hybrid
+                      </option>
+                      <option value="honda-fit">Fit</option>
+                      <option value="honda-hr_v">HR-V</option>
+                      <option value="honda-insight">Insight</option>
+                      <option value="honda-odyssey">Odyssey</option>
+                      <option value="honda-passport">Passport</option>
+                      <option value="honda-pilot">Pilot</option>
+                      <option value="honda-ridgeline">Ridgeline</option>
+                    </select>
+                    <label>Model</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="select is-relative">
+                    <select aria-label="Price">
+                      <option selected>No Max Price</option>
+                      <option>$12,000</option>
+                      <option>$14,000</option>
+                      <option>$16,000</option>
+                      <option>$18,000</option>
+                      <option>$20,000</option>
+                      <option>$25,000</option>
+                      <option>$30,000</option>
+                      <option>$35,000</option>
+                      <option>$40,000</option>
+                      <option>$45,000</option>
+                      <option>$50,000</option>
+                    </select>
+                    <label>Price</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="select is-relative">
+                    <select aria-label="Distance">
+                      <option value="10">10 miles</option>
+                      <option selected="" value="20">20 miles</option>
+                      <option value="30">30 miles</option>
+                      <option value="40">40 miles</option>
+                      <option value="50">50 miles</option>
+                      <option value="75">75 miles</option>
+                      <option value="100">100 miles</option>
+                      <option value="150">150 miles</option>
+                      <option value="200">200 miles</option>
+                      <option value="250">250 miles</option>
+                      <option value="500">500 miles</option>
+                      <option value="all">All miles from</option>
+                    </select>
+                    <label>Distance</label>
+                  </div>
+                </td>
+                <td class="is-flex">
+                  <input class="input" type="number" placeholder="ZIP" />
+                  <input
+                    class="button has-text-weight-bold"
+                    type="button"
+                    value="Search"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr class="vertical-hr mr-6" />
+          <div>
+            <h2 class="is-size-2 has-text-black has-text-weight-bold">
+              Sell your car
+            </h2>
+            <p class="pt-2">Instant Offer • List • Trade-In</p>
+            <p class="pb-3">3 easy ways to sell your car today!</p>
+            <input
+              type="button"
+              class="button get-started has-text-white has-text-weight-bold"
+              value="Get started"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Title with images and description it -->
+    <section class="section pt-5">
+      <div class="container">
+        <h2 class="my-6 has-text-weight-bold has-text-black is-size-3">
+          Trending content near you
+        </h2>
+        <div
+          class="cards is-flex is-justify-content-space-between is-flex-wrap-wrap"
+        >
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img
+                  src="images/kia-niro-hev-2023.jpg"
+                  width="1280px"
+                  height="960px"
+                  alt="kia-niro-hev-2023"
+                />
+              </figure>
+            </div>
+            <div class="card-content px-4">
+              <div class="media">
+                <p class="has-text-weight-bold has-text-black">
+                  Best Car of 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img
+                  src="images/most-cargo-space-2022.jpeg"
+                  width="1280px"
+                  height="960px"
+                  alt="most-cargo-space-2022"
+                />
+              </figure>
+            </div>
+            <div class="card-content px-4">
+              <div class="media">
+                <p class="has-text-weight-bold has-text-black">
+                  Which SUVs, Minivans and Sedans Have the Most Cargo Space?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img
+                  src="images/what-is-new-with-diesel-2022.jpeg"
+                  width="1280px"
+                  height="960px"
+                  alt="what-is-new-with-diesel-2022"
+                />
+              </figure>
+            </div>
+            <div class="card-content px-4">
+              <div class="media">
+                <p class="has-text-weight-bold has-text-black">
+                  What’s New With Diesel Trucks and SUVs in 2022?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img
+                  src="images/whats-new-with-suvs-2022.jpeg"
+                  width="1280px"
+                  height="960px"
+                  alt="whats-new-with-suvs-2022"
+                />
+              </figure>
+            </div>
+            <div class="card-content px-4">
+              <div class="media">
+                <p class="has-text-weight-bold has-text-black">
+                  What's New With SUVs for 2022?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img
+                  src="images/10-cheapest-new-cars-2022.jpeg"
+                  width="1280px"
+                  height="960px"
+                  alt="10-cheapest-new-cars-2022"
+                />
+              </figure>
+            </div>
+            <div class="card-content px-4">
+              <div class="media">
+                <p class="has-text-weight-bold has-text-black">
+                  Here Are the 10 Cheapest New Cars You Can Buy Right Now
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Three cards -->
+    <section class="section has-background-light mb-6">
+      <div
+        class="container is-flex is-justify-content-space-between my-0 mx-auto px-4"
+      >
+        <div class="card ml-4">
+          <div class="card-content pr-0 pb-0 is-flex">
+            <div class="paragraph-anchor">
+              <p class="is-size-5 has-text-black has-text-weight-bold pr-6">
+                Find your match faster
+              </p>
+              <p class="my-3">
+                Tap into a better car shopping experience with price drops, save
+                features, and more!
+              </p>
+              <a href="#" class="pink-color">Download our app</a>
+            </div>
+            <img src="images/mobile.png" alt="mobile" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content pr-0 pb-0 is-flex">
+            <div class="paragraph-anchor">
+              <p class="is-size-5 has-text-black has-text-weight-bold pr-6">
+                The Best Cars of 2023
+              </p>
+              <p class="my-3">
+                See who the experts awarded as the best cars of the year!
+              </p>
+              <a href="#" class="pink-color">Check out the winners!</a>
+            </div>
+            <img src="images/best-car-of-2023.png" alt="best-car-of-2023" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content pr-0 pb-0 is-flex">
+            <div class="paragraph-anchor">
+              <p class="is-size-5 has-text-black has-text-weight-bold pr-6">
+                Is an EV right for you?
+              </p>
+              <p class="my-3">The definitive guide to everything EV is here!</p>
+              <a href="#" class="pink-color">Read now</a>
+            </div>
+            <img src="images/ev-homepage.webp" alt="mobile" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The-latest-new-car -->
+    <section class="section The-latest-new-car">
+      <div class="container">
+        <h2 class="is-size-3 has-text-black has-text-weight-bold mb-3">
+          The latest new car releases and expert reviews
+        </h2>
+        <p class="is-size-6 has-text-black mb-5">
+          Get our experts' honest take on new makes and models.
+        </p>
+        <div
+          class="cards is-flex is-justify-content-space-between is-flex-wrap-wrap mb-5"
+        >
+          <a href="#">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="images/porsche-cayenne-2024.jpg"
+                    width="1280px"
+                    height="960px"
+                    alt="most-cargo-space-2022"
+                  />
+                </figure>
+              </div>
+              <div class="card-content px-4 py-2">
+                <p class="mb-2">EXPERT REVIEW</p>
+                <p class="has-text-weight-bold has-text-black">
+                  2024 Porsche Cayenne S Review: The Spice Must Go
+                </p>
+                <hr class="my-3" />
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center"
+                >
+                  <img
+                    src="images/brian-normile.jpg"
+                    alt="brian-normile"
+                    class="circle-image"
+                    width="64px"
+                    height="64px"
+                  />
+                  <div class="paragraph-span">
+                    <p class="is-size-6">By Brian Normile</p>
+                    <span class="is-size-7">Road Test Editor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="images/nissan-rogue.jpg"
+                    width="1280px"
+                    height="960px"
+                    alt="nissan-rogue"
+                  />
+                </figure>
+              </div>
+              <div class="card-content px-4 py-2">
+                <p class="mb-2">EXPERT REVIEW</p>
+                <p class="has-text-weight-bold has-text-black">
+                  2023 Nissan Rogue Review: The Practical Package
+                </p>
+                <hr class="my-3" />
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center"
+                >
+                  <img
+                    src="images/damon-bell.jpg"
+                    alt="brian-normile"
+                    class="circle-image"
+                    width="64px"
+                    height="64px"
+                  />
+                  <div class="paragraph-span">
+                    <p class="is-size-6">By Damon Bell</p>
+                    <span class="is-size-7">Senior Research Editor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="images/kia-sportage.jpg"
+                    width="1280px"
+                    height="960px"
+                    alt="kia-sportage"
+                  />
+                </figure>
+              </div>
+              <div class="card-content px-4 py-2">
+                <p class="mb-2">EXPERT REVIEW</p>
+                <p class="has-text-weight-bold has-text-black">
+                  2023 Kia Sportage X-Pro Review: The X-Pros and Cons of Looking
+                  Tough
+                </p>
+                <hr class="my-3" />
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center"
+                >
+                  <img
+                    src="images/aaron-bragman.jpg"
+                    alt="brian-normile"
+                    class="circle-image"
+                    width="64px"
+                    height="64px"
+                  />
+                  <div class="paragraph-span">
+                    <p class="is-size-6">By Aaron Bragman</p>
+                    <span class="is-size-7">Detroit Bureau Chief</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img
+                    src="images/ford-escape.jpg"
+                    width="1280px"
+                    height="960px"
+                    alt="ford-escape"
+                  />
+                </figure>
+              </div>
+              <div class="card-content px-4 py-2">
+                <p class="mb-2">EXPERT REVIEW</p>
+                <p class="has-text-weight-bold has-text-black">
+                  2023 Ford Escape Review: Stepping On the Gas (and Some Rakes)
+                </p>
+                <hr class="my-3" />
+                <div
+                  class="is-flex is-justify-content-space-between is-align-items-center"
+                >
+                  <img
+                    src="images/brian-normile.jpg"
+                    alt="brian-normile"
+                    class="circle-image"
+                    width="64px"
+                    height="64px"
+                  />
+                  <div class="paragraph-span">
+                    <p class="is-size-6">By Brian Normile</p>
+                    <span class="is-size-7">Road Test Editor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="#" class="pink">See more reviews</a>
+        <hr />
+      </div>
+    </section>
+    <!-- All the ways to find car chemistry -->
+    <section class="section All-the-ways mb-6">
+      <div class="container">
+        <h2
+          class="has-text-centered-desktop has-text-black has-text-weight-bold"
+        >
+          All the ways to find car chemistry
+        </h2>
+        <p class="has-text-centered-desktop has-text-black my-3 pb-1">
+          We're your one-stop shop for buying and selling your car. Get matched
+          to your perfect car, or sell one swiftly.
+        </p>
+        <div class="is-flex is-justify-content-space-around">
+          <div class="cards">
+            <div class="is-flex-desktop mb-6">
+              <svg
+                class="shop"
+                width="45px"
+                height="58px"
+                viewBox="0 0 71 58"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                role="presentation"
+                aria-hidden="true"
+                tabindex="-1"
+              >
+                <title>duotone-car</title>
+                <g
+                  id="1.-Home-page"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="home-search-make_desktop"
+                    transform="translate(-189.000000, -3449.000000)"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Group-3"
+                      transform="translate(0.500000, 3272.000000)"
+                    >
+                      <g
+                        id="Making-Connections"
+                        transform="translate(188.500000, 0.000000)"
+                      >
+                        <g
+                          id="Shop"
+                          transform="translate(0.000000, 172.000000)"
+                        >
+                          <g
+                            id="car-duotone"
+                            transform="translate(0.000000, 5.473122)"
+                          >
+                            <path
+                              d="M69.957551,12.6514286 L69.6930612,12.6514286 C69.2081633,12.6514286 63.8963265,12.9820408 63.8742857,12.9820408 C63.5204116,13.0094846 63.1931326,13.1803825 62.9683733,13.4550884 C62.743614,13.7297942 62.6409079,14.0844335 62.6840816,14.4367347 C62.6840816,14.9877551 62.6840816,16.6408163 62.6840816,16.9493878 L62.2432653,16.9493878 C62.0008163,16.2881633 58.9591837,8.33142857 57.5044898,5.02530612 C56.7612731,3.08890277 55.2551171,1.54290133 53.3387755,0.749387755 C52.9202874,0.236712684 52.2800253,-0.0423759103 51.6195918,1.44936146e-15 C51.4199118,-0.0109658279 51.221213,0.0348877461 51.0465306,0.132244898 C50.8849221,0.237754687 50.7613389,0.392233745 50.6938776,0.573061224 C50.6938776,0.573061224 42.7812245,1.22124533e-15 35.2653061,1.22124533e-15 C27.7493878,1.22124533e-15 19.9910204,0.573061224 19.8367347,0.573061224 C19.7296958,0.402272788 19.5769994,0.264846 19.3959184,0.176326531 C19.2668066,0.0802292619 19.1148708,0.0194549444 18.955102,9.1333191e-16 C18.298542,-0.0364083963 17.6600156,0.222235238 17.2138776,0.705306122 C15.2720324,1.49887577 13.7472179,3.06360692 13.0040816,5.02530612 C11.5493878,8.33142857 8.59591837,16.2881633 8.24326531,16.9493878 L7.8244898,16.9493878 C7.8244898,16.9493878 7.8244898,14.9877551 7.8244898,14.4367347 C7.87455052,14.0795977 7.77143697,13.7179295 7.54056822,13.440887 C7.30969946,13.1638445 6.97255456,12.9972025 6.6122449,12.9820408 C6.6122449,12.9820408 0.83755102,12.5632653 0.595102041,12.6514286 C-0.198367347,13.0702041 -0.0220408163,13.9959184 0.176326531,14.635102 C0.467235542,15.6578459 0.828085632,16.659389 1.25632653,17.6326531 C1.37872224,17.9138456 1.62181692,18.1245276 1.91755102,18.2057143 C2.12874085,18.2849296 2.35330989,18.3223578 2.57877551,18.3159184 L4.25387755,18.3159184 L5.59836735,20.1453061 C5.59836735,20.1453061 5.11346939,20.5861224 4.82693878,20.8946939 C4.40429995,21.3085534 4.02743548,21.7667023 3.70285714,22.2612245 C3.39266986,22.7859003 3.13430798,23.3395329 2.93142857,23.9142857 C2.47987707,25.1727658 2.19100657,26.4837935 2.07183673,27.8155102 C1.69714286,31.1877551 3.70285714,50.5395918 4.14367347,54.6171429 C4.14367347,55.1020408 4.14367347,55.3885714 4.14367347,55.3885714 C4.14367347,56.16 4.38612245,56.5787755 5.4,56.6228571 L15.0318367,56.6228571 C16.0016327,56.6228571 16.3102041,56.1379592 16.3102041,55.4106122 L16.3102041,49.5918367 L54.242449,49.5918367 L54.242449,55.4106122 C54.2120914,55.7524982 54.3395975,56.0895194 54.5886541,56.3256939 C54.8377108,56.5618683 55.1810227,56.6713124 55.5208163,56.6228571 L64.7779592,56.6228571 C66.1004082,56.6228571 66.364898,56.16 66.364898,55.3885714 C66.364898,55.3885714 68.877551,31.1436735 68.5689796,27.8155102 C68.4390913,26.4854692 68.1505091,25.1757499 67.7093878,23.9142857 C67.3053855,22.7815346 66.6584191,21.7509021 65.8138776,20.8946939 L65.0204082,20.1453061 L66.3869388,18.3159184 C67.1597522,18.3191424 67.9322144,18.2823585 68.7012245,18.2057143 C69.0036975,18.137489 69.2519253,17.9223583 69.362449,17.6326531 C69.7817298,16.6756911 70.1280238,15.6883848 70.3983673,14.6791837 C70.5306122,14.1281633 70.7730612,13.2244898 69.957551,12.6514286 Z"
+                              id="Path"
+                              fill="#5E2B81"
+                            ></path>
+                            <path
+                              d="M58.8269388,14.1061224 C58.0982338,11.6874118 57.1996734,9.32316675 56.1379592,7.03102041 C55.322449,5.2677551 54.6171429,4.93714286 53.515102,4.82693878 C52.4130612,4.71673469 42.0979592,4.07755102 35.4195918,4.07755102 C28.7412245,4.07755102 18.36,4.71673469 17.3240816,4.82693878 C16.2881633,4.93714286 15.5387755,5.31183673 14.7012245,7.03102041 C13.6262893,9.31757846 12.7273546,11.6828083 12.0122449,14.1061224 C12.0122449,14.8555102 12.0122449,15.4726531 13.1804082,15.4726531 C14.3485714,15.4726531 27.1102041,14.8555102 35.4195918,14.8555102 C43.7289796,14.8555102 56.5346939,15.4285714 57.6587755,15.4285714 C58.7828571,15.4285714 58.8930612,14.8555102 58.8269388,14.1061224 Z"
+                              id="Path"
+                              fill="#10C0E1"
+                            ></path>
+                            <path
+                              d="M17.9632653,25.4130612 C16.684898,25.0604082 10.0726531,24.5093878 8.00081633,24.3110204 C6.36979592,25.0604082 7.14122449,29.7330612 9.36734694,30.2179592 C10.8,30.5265306 19.946949,31.2759184 19.946949,31.2759184 C19.946949,31.2759184 19.9689796,25.9640816 17.9632653,25.4130612 Z"
+                              id="Path"
+                              fill="#FFFFFF"
+                            ></path>
+                            <path
+                              d="M52.8979592,25.4791837 C54.1983673,25.1044898 60.7885714,24.5755102 62.8604082,24.355102 C64.4914286,25.1265306 63.72,29.7991837 61.4938776,30.2840816 C60.0832653,30.5926531 51.002449,31.32 51.002449,31.32 C51.002449,31.32 50.8702041,26.0302041 52.8979592,25.4791837 Z"
+                              id="Path"
+                              fill="#FFFFFF"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <div class="ml-5">
+                <h4 class="has-text-black has-text-weight-bold">Shop</h4>
+                <p class="has-text-black my-4">
+                  Find cars for sale, local dealers, and advice. Also, our
+                  price-badging and price-drop notifications keep you informed
+                  of potential deals.
+                </p>
+                <a href="#">Find cars for sale</a>
+              </div>
+            </div>
+            <div class="is-flex-desktop mb-6">
+              <i class="fa-solid fa-newspaper pt-2"></i>
+              <div class="ml-5">
+                <h4 class="has-text-black has-text-weight-bold">News</h4>
+                <p class="has-text-black my-4">
+                  Our very own Cars.com experts offer unbiased coverage of
+                  today's automotive landscape. Yes, there will be dad jokes.
+                </p>
+                <a href="#">Learn from the best</a>
+              </div>
+            </div>
+            <div class="is-flex-desktop pt-6">
+              <svg
+                class="service-repair"
+                width="45px"
+                height="58px"
+                viewBox="0 0 59 49"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                role="presentation"
+                aria-hidden="true"
+                tabindex="-1"
+              >
+                <title>duotone-service-repair</title>
+                <g
+                  id="1.-Home-page"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="home-search-make_desktop"
+                    transform="translate(-198.000000, -3936.000000)"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Group-3"
+                      transform="translate(0.500000, 3272.000000)"
+                    >
+                      <g
+                        id="Making-Connections"
+                        transform="translate(188.500000, 0.000000)"
+                      >
+                        <g
+                          id="icon-service-repair"
+                          transform="translate(9.500000, 664.075472)"
+                        >
+                          <path
+                            d="M45.694237,38.7903711 C47.5607347,40.6738551 47.5607347,43.6874295 45.6189984,45.6462527 C43.7525007,47.5297368 40.6914447,47.5297368 38.7508659,45.6462527 L26.8047023,32.7626384 L15.6057164,46.3996465 C14.5604778,47.5297368 12.6193202,47.6044921 11.5740815,46.3996465 L8.73700514,43.4614113 C7.54244666,42.330737 7.54244666,40.447837 8.66234525,39.3171625 L21.5785089,27.1875257 L15.3817367,21.2363003 C13.2912594,19.277477 12.0967009,18.6747621 10.454183,19.2021376 C8.81166505,19.8048525 6.497208,19.8048525 4.33207074,18.3734047 C-0.222183488,15.4351697 0.0017962285,9.7093783 0.0017962285,9.7093783 L0.375095756,9.10666343 L5.0786698,12.1955772 C5.0786698,12.1955772 7.9904061,14.0037218 10.2302033,10.5381113 C12.76864,6.46978584 9.93156364,4.81231994 9.93156364,4.81231994 L5.22798959,1.79874555 L5.67594904,1.19544665 C5.67594904,1.19544665 10.0062235,-1.59210965 15.0830971,1.34612537 C18.2188131,3.22960936 19.7866712,6.92123798 18.9654122,10.5375272 C18.5174527,12.7223687 18.9654122,13.4757623 20.68259,15.3592463 L26.954022,21.6124131 L34.2712715,14.0031378 L39.7961046,19.5782503 L32.4788551,26.8861682 L45.694237,38.7903711 Z"
+                            id="Path"
+                            fill="#532380"
+                          ></path>
+                          <path
+                            d="M42.5574559,45.4571844 C44.0754627,45.4571844 45.2738892,44.2539059 45.2738892,42.7297532 C45.2738892,41.2056006 44.0754627,40.0023222 42.5574559,40.0023222 C41.039449,40.0023222 39.8410225,41.2056006 39.8410225,42.7297532 C39.8410225,44.2539059 41.0388297,45.4571844 42.5574559,45.4571844 Z"
+                            id="Path"
+                            fill="#FFFFFF"
+                          ></path>
+                          <path
+                            d="M53.3043454,15.4770429 C54.2017471,14.5886823 55.6964513,14.7367424 56.5185385,15.551073 L57.3406259,16.3654035 C58.2374484,17.2537641 58.0879779,18.586305 57.2658906,19.4006357 L52.7817783,23.8424386 C51.8849558,24.7307993 50.539722,24.8048293 49.6428995,23.9164688 L48.8208123,23.1021381 C47.9234104,22.2137775 47.9234104,20.8072067 48.8208123,19.918846 C48.9702827,19.4006357 48.5212921,18.438245 47.625049,17.5493105 C45.7566687,15.6985592 43.5893478,15.6245292 42.5430549,16.5869198 L41.0483507,18.1415508 L35.5926806,12.5892971 L37.16212,11.1086961 C38.881609,9.33197484 36.9379143,7.48122357 36.9379143,7.48122357 C32.1548612,2.74330032 25.4281132,2.89136042 25.4281132,2.89136042 L25.3533779,1.11463921 C39.0305002,-2.43880323 44.1872294,3.48360083 46.0556096,5.26032204 L50.0165755,9.18391474 C50.9881333,10.2203355 49.9418404,13.0334774 51.3618092,14.5140784 C51.9596909,15.1803488 52.707043,15.4030129 53.3043454,15.4770429 Z"
+                            id="Path"
+                            fill="#00BFDE"
+                          ></path>
+                          <path
+                            d="M26.8047023,32.7626384 L15.6057164,46.3996465 C14.5604778,47.5297368 12.6193202,47.6044921 11.5740815,46.3996465 L8.73700514,43.4614113 C7.54244666,42.330737 7.54244666,40.447837 8.66234525,39.3171625 L21.5785089,27.1875257 L26.954022,21.6124131 L34.2712715,14.0031378 L39.7961046,19.5782503 L32.4788551,26.8861682 L26.8047023,32.7626384 Z"
+                            id="Path"
+                            fill="#00BFDE"
+                          ></path>
+                          <polygon
+                            id="Path"
+                            fill="#250858"
+                            points="26.8047023 32.7626384 21.5785089 27.1875257 26.954022 21.6124131 32.4788551 26.8861682"
+                          ></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <div class="ml-5">
+                <h4 class="has-text-black has-text-weight-bold">
+                  Service & Repair
+                </h4>
+                <p class="has-text-black my-4">
+                  Watch do-it-yourself tutorials or find local repair options.
+                </p>
+                <a href="#">Learn to DIY</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="is-flex-desktop mb-6">
+              <i class="fa-solid fa-magnifying-glass pt-2"></i>
+              <div class="ml-5">
+                <h4 class="has-text-black has-text-weight-bold">Research</h4>
+                <p class="has-text-black my-4">
+                  View side-by-side comparisons, payment calculators, video
+                  reviews, and consumer reviews. These let you hear the good and
+                  the bad from current car owners.
+                </p>
+                <a href="#">Compare what's out there</a>
+              </div>
+            </div>
+            <div class="is-flex-desktop mb-6">
+              <i class="fa-solid fa-cart-shopping pt-2"></i>
+              <div class="ml-5">
+                <h4 class="has-text-black has-text-weight-bold">Sell</h4>
+                <p class="has-text-black my-4">
+                  Check out our free, secure methods for selling your car. You
+                  can either sell directly to a private-party shopper or get an
+                  Instant Offer from a dealership. Choose the option that’s
+                  right for you!
+                </p>
+                <a href="#">Sell your car</a>
+              </div>
+            </div>
+            <div class="is-flex-desktop">
+              <svg
+                class="Certified-Pre-Owned"
+                width="45px"
+                height="58px"
+                viewBox="0 0 49 61"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                role="presentation"
+                aria-hidden="true"
+                tabindex="-1"
+              >
+                <title>duotone-shield</title>
+                <g
+                  id="1.-Home-page"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="home-search-make_desktop"
+                    transform="translate(-798.000000, -3923.000000)"
+                  >
+                    <g
+                      id="Group-3"
+                      transform="translate(0.500000, 3272.000000)"
+                    >
+                      <g
+                        id="Making-Connections"
+                        transform="translate(188.500000, 0.000000)"
+                      >
+                        <g
+                          id="Certified"
+                          transform="translate(611.000000, 647.000000)"
+                        >
+                          <g
+                            id="dual-icon-shield"
+                            transform="translate(0.000000, 6.000000)"
+                          >
+                            <path
+                              d="M22.5,57 C22.5,57 45,45.6 45,28.5 L45,8.55 L22.5,0 L0,8.55 L0,28.5 C0,45.6 22.5,57 22.5,57 Z"
+                              id="Path"
+                              stroke="#532380"
+                              stroke-width="4"
+                              fill="#532380"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M22,0 L45,8.55 L45,28.5 C45,45.6 22,57 22,57 L22,57 L22,0 Z"
+                              id="Combined-Shape"
+                              stroke="#532380"
+                              stroke-width="2"
+                              fill="#00BFDE"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                            <path
+                              d="M20.6666667,26.1429126 L17.3277497,22.8406871 C17.0240086,22.5402838 16.531547,22.5402838 16.2278058,22.8406871 C15.9240647,23.1410904 15.9240647,23.6281404 16.2278058,23.9285437 L20.1166947,27.7746975 C20.4204358,28.0751008 20.9128975,28.0751008 21.2166386,27.7746975 L29.7721942,19.3131591 C30.0759353,19.0127558 30.0759353,18.5257058 29.7721942,18.2253025 C29.468453,17.9248992 28.9759914,17.9248992 28.6722503,18.2253025 L20.6666667,26.1429126 Z"
+                              id="Icon-Color"
+                              fill="#FFFFFF"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <div class="ml-5">
+                <h4 class="has-text-black has-text-weight-bold">
+                  Certified Pre-Owned
+                </h4>
+                <p class="has-text-black my-4">
+                  Learn why you should consider a Certified Pre-Owned car, and
+                  get info on manufacturer programs.
+                </p>
+                <a href="#">Explore CPO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular searches -->
+    <section class="section has-background-light Popular-searches">
+      <div class="container">
+        <h2 class="ml-5 mt-5 is-size-2 has-text-black has-text-weight-bold">
+          Popular searches
+        </h2>
+        <section class="accordions pr-5">
+          <article class="accordion pt-6 pb-5">
+            <div class="accordion-header toggle pb-3">
+              <p>Popular new cars for sale</p>
+              <button class="toggle" aria-label="toggle"></button>
+            </div>
+            <div class="accordion-body px-3">
+              <div class="columns">
+                <div class="column">
+                  <a href="#" class="is-block mt-3 mb-5"
+                    >2023 Chevrolet Silverado 1500 for sale</a
+                  >
+                  <a href="#" class="is-block my-5">2023 Ford F-150 for sale</a>
+                  <a href="#" class="is-block my-5"
+                    >2024 Ford Mustang for sale</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mt-3 mb-5"
+                    >2023 Ford Ranger for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2023 GMC Sierra 1500 for sale</a
+                  >
+                  <a href="#" class="is-block my-5">2023 Honda CR-V for sale</a>
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mt-3 mb-5"
+                    >2023 Jeep Grand Cherokee for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2023 Jeep Wrangler for sale</a
+                  >
+                  <a href="#" class="is-block my-5">2023 RAM 1500 for sale</a>
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mt-3 mb-5"
+                    >2023 Toyota Camry for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2023 Toyota Sequoia for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2023 Toyota Tacoma for sale</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="accordion pb-5">
+            <div class="accordion-header toggle pb-3">
+              <p>Popular used cars for sale</p>
+              <button class="toggle" aria-label="toggle"></button>
+            </div>
+            <div class="accordion-body px-5">
+              <div class="columns">
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >2016 Honda CR-V for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2016 Ford Explorer for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2016 Dodge Challenger for sale</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >2016 Jeep Grand Cherokee for sale</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >2016 Nissan Rogue for sale</a
+                  >
+                  <a href="#" class="is-block my-5">2016 Ford F-150 for sale</a>
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >2016 Honda Civic for sale</a
+                  >
+                  <a href="#" class="is-block my-5">2015 Ford F-150 for sale</a>
+                  <a href="#" class="is-block my-5"
+                    >2016 Land Rover Range Rover for sale</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >2016 Chevrolet Silverado 1500 for sale</a
+                  >
+                  <a href="#" class="is-block my-5">2016 RAM 1500 for sale</a>
+                  <a href="#" class="is-block my-5">2013 Ford F-150 for sale</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="accordion pb-5">
+            <div class="accordion-header toggle pb-3">
+              <p>Research popular new cars for sale</p>
+              <button class="toggle" aria-label="toggle"></button>
+            </div>
+            <div class="accordion-body px-5">
+              <div class="columns">
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2023 Chevrolet Silverado 1500</a
+                  >
+                  <a href="#" class="is-block my-5">Research 2023 Ford F-150</a>
+                  <a href="#" class="is-block my-5"
+                    >Research 2024 Ford Mustang</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2023 Ford Ranger</a
+                  >
+                  <a href="#" class="is-block my-5">Research 2023 Honda CR-V</a>
+                  <a href="#" class="is-block my-5"
+                    >Research 2023 GMC Sierra 1500</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2023 Jeep Grand Cherokee</a
+                  >
+                  <a href="#" class="is-block my-5">Research 2023 RAM 1500</a>
+                  <a href="#" class="is-block my-5"
+                    >Research 2023 Jeep Wrangler</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2023 Toyota Camry</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >Research 2023 Toyota Tacoma</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >Research 2023 Toyota Sequoia</a
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="accordion pb-5">
+            <div class="accordion-header toggle pb-3">
+              <p>Research popular used cars for sale</p>
+              <button class="toggle" aria-label="toggle"></button>
+            </div>
+            <div class="accordion-body px-5">
+              <div class="columns">
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2016 Honda CR-V</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >Research 2016 Dodge Challenger</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >Research 2016 Ford Explorer</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2016 Jeep Grand Cherokee</a
+                  >
+                  <a href="#" class="is-block my-5">Research 2016 Ford F-150</a>
+                  <a href="#" class="is-block my-5"
+                    >Research 2016 Nissan Rogue</a
+                  >
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2016 Honda Civic</a
+                  >
+                  <a href="#" class="is-block my-5"
+                    >Research 2016 Land Rover Range Rover</a
+                  >
+                  <a href="#" class="is-block my-5">Research 2015 Ford F-150</a>
+                </div>
+                <div class="column">
+                  <a href="#" class="is-block mb-5 mt-3"
+                    >Research 2016 Chevrolet Silverado 1500</a
+                  >
+                  <a href="#" class="is-block my-5">Research 2013 Ford F-150</a>
+                  <a href="#" class="is-block my-5">Research 2016 RAM 1500</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <hr class="my-0 horizontal-line" />
+    <!-- Connect with us -->
+    <section class="section pb-5 pl-4">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p class="has-text-weight-bold has-text-black pl-5 ml-4">
+              Buying & Selling
+            </p>
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Find a Car</a
+            >
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Find a Dealer</a
+            >
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Listings by City</a
+            >
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Certified Pre-Owned</a
+            ><a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Car Payment Calculators</a
+            >
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Car Reviews & Ratings</a
+            >
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Compare Side by Side</a
+            >
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Fraud Awareness</a
+            ><a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Sell Your Car</a
+            >
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold has-text-black pl-5 ml-4">
+              Explore Our Brand
+            </p>
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >NewCars.com <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+            <a href="#" class="is-block mt-3 mb-6 has-text-black pl-5 ml-4"
+              >DealerRater <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+            <p class="has-text-weight-bold has-text-black pl-5 ml-4">
+              For Dealers
+            </p>
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Dealer Login <i class="fa-solid fa-arrow-up-right-dots"></i></a
+            ><a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >GrowWithCars.com <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >FUEL <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Dealer Inspire <i class="fa-solid fa-arrow-up-right-dots"></i>
+            </a>
+            <a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >DealerRater <i class="fa-solid fa-arrow-up-right-dots"></i></a
+            ><a href="#" class="is-block my-3 has-text-black pl-5 ml-4"
+              >Accu-Trade <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold has-text-black">Our Company</p>
+            <a href="#" class="is-block my-3 has-text-black">About Cars.com</a>
+            <a href="#" class="is-block my-3 has-text-black"
+              >Contact Cars.com</a
+            >
+            <a href="#" class="is-block my-3 has-text-black"
+              >Investor Relations <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+            <a href="#" class="is-block my-3 has-text-black">Careers</a>
+            <a href="#" class="is-block my-3 has-text-black"
+              >Licensing & Reprints
+              <i class="fa-solid fa-arrow-up-right-dots"></i
+            ></a>
+            <a href="#" class="is-block my-3 has-text-black">Site Map</a>
+            <a href="#" class="is-block my-3 has-text-black">Feedback</a>
+          </div>
+          <div class="column">
+            <p class="has-text-weight-bold has-text-black">Our Mobile App</p>
+            <a href="#" class="is-block my-3 has-text-black"
+              >Download the App Today</a
+            >
+            <a href="https://www.apple.com/app-store/"><img src="images/app-store.png" alt="app-store" /></a>
+            <a href="https://play.google.com/"><img src="images/google-play.png" alt="google-play"/></a>
+            <p class="has-text-weight-bold has-text-black mt-5 mb-3">
+              Connect With Us
+            </p>
+            <a href="https://twitter.com/?lang=ar" class="twitter mx-3"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/?locale=ar_AR" class="facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/" class="youtube mx-3"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/" class="linkedin ml-3"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="mt-0 end-line" />
+    <!-- footer -->
+    <section class="section All-rights-reserved py-3">
+      <div class="container">
+        <div class="ml-1 pb-3">
+          <a href="#">Terms & Conditions of Use</a>
+          <a href="#" class="mx-5">Privacy Notice</a>
+          <a href="#">California Privacy Notice</a>
+          <a href="#" class="mx-5"
+            >My Privacy Choices
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 30 14"
+              style="enable-background: new 0 0 30 14"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  fill: #ffffff;
+                }
+                .st1 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  fill: #0066ff;
+                }
+                .st2 {
+                  fill: #ffffff;
+                }
+                .st3 {
+                  fill: #0066ff;
+                }
+              </style>
+              <g>
+                <g id="final---dec.11-2020_1_">
+                  <g
+                    id="_x30_208-our-toggle_2_"
+                    transform="translate(-1275.000000, -200.000000)"
+                  >
+                    <g
+                      id="Final-Copy-2_2_"
+                      transform="translate(1275.000000, 200.000000)"
+                    >
+                      <path
+                        class="st0"
+                        d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <g id="final---dec.11-2020">
+                  <g
+                    id="_x30_208-our-toggle"
+                    transform="translate(-1275.000000, -200.000000)"
+                  >
+                    <g
+                      id="Final-Copy-2"
+                      transform="translate(1275.000000, 200.000000)"
+                    >
+                      <path
+                        class="st1"
+                        d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8
+                      h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z"
+                      />
+                      <path
+                        id="x"
+                        class="st2"
+                        d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0
+                      l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8
+                      c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z"
+                      />
+                      <path
+                        id="y"
+                        class="st3"
+                        d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0
+                      L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </g></svg></a>
+          <a href="#">Accessibility Statement</a>
+          <a href="#" class="ml-5">Ad Choices</a>
+          <p class="mt-4">&copy; 2023 By <a href="http://www.github.com/osama806" target="_blank">Osama Naser</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

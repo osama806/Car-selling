@@ -52,13 +52,13 @@ hr.break {
 }
 .introduction {
   width: 100vw;
-  height: 510px;
+  height: 615px;
   background-color: var(--sugar_light);
   width: 1200px;
 }
 .introduction img {
   position: relative;
-  max-height: 300px;
+  max-height: 400px;
   width: 100vw;
 }
 .introduction .circle {
